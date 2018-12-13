@@ -164,6 +164,13 @@
 }
 
 
+/* ------------- Editais ------------- */
+
+#editais{
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+
 /* ------------- Footer ------------- */
 
 .img-logo-2{
@@ -245,4 +252,8 @@ hr{
     margin-top: 70px;
 }
 
-
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
