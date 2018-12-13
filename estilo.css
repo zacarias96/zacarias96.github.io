@@ -78,6 +78,7 @@
     ul>.divisor{
         display: none;
     }
+
 }
 
 .navbar-toggle{
@@ -94,8 +95,8 @@
 
 
 #secaocontato{
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
 
 #secaocontato span{
@@ -105,6 +106,27 @@
 
 .my-border{
     height: 200px;
+}
+
+#myCarousel{
+    width: 100% !important;
+}
+
+.carousel-inner > .item > img {
+    position-relative;
+    min-width: 100%;
+}
+
+
+/* ------------- Contato ------------- */
+
+.form-control{
+    margin-bottom: 8px;
+}
+
+#pagina-contato{
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 
@@ -174,6 +196,15 @@ a{
 
 hr{
     border-width: .18rem;
-    width: 4rem;
+    width: 2.5rem;
     border-color: rgba(25, 81, 40, 0.4);
 }
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    p{
+        font-size: 14px;
+    }
+}
+
+
