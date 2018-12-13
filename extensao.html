@@ -30,7 +30,7 @@
     </ul>
 </div>
 
-<nav class="navbar navbar-default my-navbar">
+<nav class="navbar navbar-default my-navbar" id="id-menu">
     <div class="container">
 
         <!-- header -->
@@ -118,6 +118,103 @@
     </div>
 </section>
 
+
+<section id="projetos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h3 class="text-center">Cursos FIC</h3>
+                <hr>
+
+                <p class="text-justifys">
+                    Segundo o Art. 3º do Decreto 5.154/2004, que regulamenta o Cap. III da LDB, “os cursos e programas de Formação Inicial e Continuada de trabalhadores, incluídos a capacitação, o aperfeiçoamento, a especialização e a atualização, em todos os níveis de escolaridade, poderão ser ofertados segundo itinerários formativos, objetivando o desenvolvimento de aptidões para a vida produtiva e social”.
+                </p>
+
+                <p class="text-justify">
+                    Os cursos e programas de Formação Inicial e Continuada (FIC) objetivam:
+                </p>
+
+                <ul class="text-justify">
+                    <li>
+                        Proporcionar aos trabalhadores o desenvolvimento de aptidões para a vida produtiva e social;
+                    </li>
+                    <li>
+                        Promover a capacitação, o aperfeiçoamento, a especialização e a atualização de profissionais nas áreas da educação profissional e tecnológica;
+                    </li>
+                    <li>
+                        Qualificar e requalificar trabalhadores, preparando-os para que se dediquem a um tipo de atividade profissional a fim de promover seu ingresso e/ou reingresso no mercado de trabalho;
+                    </li>
+                    <li>
+                        Ampliar as competências profissionais de trabalhadores;
+                    </li>
+                    <li>
+                        Despertar nos cidadãos o interesse para o reingresso na escola, em cursos e programas que promovam a elevação de escolaridade e o aumento da consciência sócio-ambiental.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="text-center">Projetos</h3>
+                <hr>
+
+                <p class="text-justifys">
+                    São projetos que agregam um conjunto de ações, técnicas e metodologias transformadoras, desenvolvidas e/ou aplicadas na interação com a população e apropriadas por ela. Pressupõe a realização de intervenção visando à promoção de desenvolvimento econômico, tecnológico e sócio-ambiental. Tais projetos podem ser:
+                </p>
+
+
+                <ul class="text-justify">
+                    <li>
+                        Sociais, quando representam soluções para inclusão social, geração de oportunidades e melhoria das condições de vida;
+                    </li>
+                    <li>
+                        Tecnológicos, quando têm uma interface de aplicação e de solução de problemas operacionais no mundo do trabalho;
+                    </li>
+                    <li>
+                        Culturais, artísticos e esportivos, quando compreendem ações de promoção e difusão da cultura, das artes, bem como ações integradoras de caráter esportivo.
+                    </li>
+                </ul>
+                <div class="col-md-6 text-justify">
+                    <h4 class="text-center">
+                        Cursos FIC:
+                    </h4>
+                    <hr>
+
+                    <a >
+                        Atelier da Clarineta
+                    </a>.
+                    <a >
+                        LIBRAS - Básico
+                    </a>.
+                    <a class="text-justify">
+                        LIBRAS - Intermediário
+                    </a>.
+                    <a >
+                        Libre Office: Informática para Leigos
+                    </a>
+                </div>
+                <div class="col-md-6 text-justify">
+                    <h4 class="text-center">
+                        Projetos:
+                    </h4>
+                    <hr>
+
+                    <a >
+                        Cinema Con(S)Ciência
+                    </a>.
+                    <a >
+                        Dança: Experiência Formativa
+                    </a>.
+                    <a >
+                        Dandô - Circuito de Música Décio Marques
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="pagina-contato">
     <div class="container">
         <div class="row">
@@ -131,7 +228,7 @@
                 <span class="glyphicon glyphicon-user"></span>
                 <hr>
 
-                <p>Gerente: Prof. Bruno Quirino Leal - PORTARIA N" 1193, DE 04 DE JULHO DE2017</p>
+                <p>Prof. Bruno Quirino Leal - PORTARIA N" 1193, DE 04 DE JULHO DE2017</p>
             </div>
             <div class="col-md-4 col-xs-6 text-center my-border">
                 <span class="glyphicon glyphicon-envelope"></span>
@@ -140,7 +237,7 @@
                 <p>gepex.formosaifg.edu.b</p>
             </div>
 
-            <div class="col-md-4 col-xs-6 text-center my-border">
+            <div class="col-md-4 col-xs-12 text-center my-border">
                 <span class="glyphicon glyphicon-phone"></span>
                 <hr>
 
@@ -207,6 +304,20 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 30) {
+                $("#id-menu").addClass("navbar-fixed-top");
+                $("#extensao").addClass("my-margin");
+            } else {
+                $("#id-menu").removeClass("navbar-fixed-top");
+                $("#extensao").removeClass("my-margin");
+            }
+        });
+    });
+</script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>

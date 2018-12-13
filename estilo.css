@@ -135,6 +135,35 @@
 }
 
 
+/* ------------- Extensão ------------- */
+
+#projetos a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ------------- Nossos Cursos ------------- */
+
+#nossos-cursos h4{
+    color: #195128;
+}
+
+#nossos-cursos a{
+    text-decoration: none;
+    color: #0d0d0d;
+    cursor: pointer;
+}
+
+#nossos-cursos a:hover{
+    color: #404040;
+}
+
+#nossos-cursos{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
 /* ------------- Footer ------------- */
 
 .img-logo-2{
@@ -210,6 +239,10 @@ hr{
     p{
         font-size: 14px;
     }
+}
+
+.my-margin{
+    margin-top: 70px;
 }
 
 

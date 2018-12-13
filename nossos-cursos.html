@@ -30,7 +30,7 @@
     </ul>
 </div>
 
-<nav class="navbar navbar-default my-navbar">
+<nav class="navbar navbar-default my-navbar" id="id-menu">
     <div class="container">
 
         <!-- header -->
@@ -86,11 +86,99 @@
     </div><!-- /container -->
 </nav><!-- /nav -->
 
-<section id="capa">
+<section id="nossos-cursos">
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">
+                    Nossos Cursos
+                </h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 col-xs-6 text-center">
+                        <h4>
+                            Curso de Bacharelado
+                        </h4>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a>Bacharelado em Engenharia Civil</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-6 text-center">
+                        <h4>
+                            Curso de Licenciatura
+                        </h4>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a>
+                                    Licenciatura em Ciências Biológicas
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Licenciatura em Ciências Sociais
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-            Hello, World!
+                    <div class="col-md-4 col-xs-6 text-center">
+                        <h4>
+                            Curso de Técnico Integrado
+                        </h4>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a>
+                                    Técnico Integrado em Biotecnologia
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Técnico Integrado em Saneamento
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-xs-6 text-center">
+                        <h4>
+                            Curso de Técnico Integrado - EJA
+                        </h4>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a>
+                                    Técnico Integrado em Edificações - EJA
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Técnico Integrado em Manutenção e Suporte em Informática - EJA
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-xs-6 text-center">
+                        <h4>
+                            Curso de Tecnologia
+                        </h4>
+                        <hr>
+                        <ul>
+                            <li>
+                                <a>
+                                    Superior de Tecnologia em Análise e Desenvolvimento de Sistemas
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -151,6 +239,20 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 30) {
+                $("#id-menu").addClass("navbar-fixed-top");
+                $("#nossos-cursos").addClass("my-margin");
+            } else {
+                $("#id-menu").removeClass("navbar-fixed-top");
+                $("#nossos-cursos").removeClass("my-margin");
+            }
+        });
+    });
+</script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>

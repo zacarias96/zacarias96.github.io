@@ -30,7 +30,7 @@
     </ul>
 </div>
 
-<nav class="navbar navbar-default my-navbar">
+<nav class="navbar navbar-default my-navbar" id="id-menu">
     <div class="container">
 
         <!-- header -->
@@ -86,11 +86,118 @@
     </div><!-- /container -->
 </nav><!-- /nav -->
 
-<section id="capa">
+<section id="pesquisa-e-pos">
     <div class="container">
         <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Apresentação da Pesquisa e Pós-Graduação</h2>
+                <hr>
+            </div>
 
-            Hello, World!
+            <div class="col-md-10 col-md-offset-1 text-justify">
+                <p>
+                    A pesquisa forma, junto com o ensino e a extensão, o tripé da educação ofertada no IFG. O compromisso com o avanço da Ciência é um dos pilares que sustentam as ações de pesquisa e pós-graduação na Instituição.
+                </p>
+
+                <p>
+                    Para isso, o IFG fomenta o desenvolvimento de projetos de pesquisa, estimula a participação de estudantes em programas de iniciação científica e também investe na participação de servidores em pós-graduações, bem como promove eventos científicos institucionais.
+                </p>
+
+                <p>
+                    O IFG também incentiva a participação de alunos e servidores para apresentação de trabalhos científicos em eventos regionais, nacionais e internacionais. No Câmpus Formosa, as ações de pesquisa e pós-graduação são promovidas em conjunto com a extensão
+                </p>
+
+                <p>
+                    A Gerência de Pesquisa, Pós-Graduação e Extensão (Gepex) é o órgão subordinado à Direção-Geral do Câmpus Formosa responsável pela implementação e desenvolvimento de políticas e ações relacionadas à Pesquisa, Inovação, Pós-Graduação e Extensão, em conformidade com as orientações da Pró-Reitoria de Pesquisa e Pós-Graduação (PRPPG) e da Pró-Reitoria de Extensão (Proex), segundo as políticas definidas para o Instituto Federal de Educação, Ciência e Tecnologia de Goiás (IFG).
+                </p>
+                <p>
+                    As ações de pesquisa constituem um processo educativo para a investigação e o empreendedorismo, visando à inovação e à solução de problemas científicos e tecnológicos, envolvendo todos os níveis e modalidades de ensino, com vistas ao desenvolvimento social, ao bem-estar do ser humano e à preservação da natureza.
+
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="projetos">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h3 class="text-center">Programas</h3>
+                <hr>
+
+                <p class="text-justifys">
+                    Compete à Gerência de Pesquisa, Pós-Graduação e Extensão propor, planejar, coordenar e avaliar, no câmpus, o desenvolvimento de programas e projetos de pesquisa e inovação que mediem relações estabelecidas entre as organizações da sociedade civil, o mundo de trabalho e a instituição.
+                </p>
+
+                <ul class="text-justify">
+                    <li>
+                        Para conhecer a lista de programas oferecidos pela PROPPG, <a>clique aqui</a>.
+                    </li>
+                    <li>
+                        Para acessar a lista de editais dos programas que estão em andamento, <a>clique aqui</a>.
+                    </li>
+                    <li>
+                        Para conhecer os regulamentos de pesquisa, <a>clique aqui</a>.
+                    </li>
+                    <li>
+                        Para conhecer o Centro de Inovação Tecnológica (CITE) do IFG, <a>clique aqui</a>.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="text-center">Projetos</h3>
+                <hr>
+
+                <p class="text-justifys">
+                    A Gerência de Pesquisa, Pós-Graduação e Extensão é responsável por supervisionar a execução e manter atualizadas as informações sobre os programas e projetos de pesquisa e inovação em desenvolvimento. O IFG/ Câmpus Formosa participa ativamente nos programas de pesquisa da instituição realizando estudos em diversas áreas de conhecimento.
+                </p>
+
+
+                <ul class="text-justify">
+                    <li>
+                        Para conhecer os projetos de pesquisa e inovação desenvolvidos e em desenvolvimento no Câmpus Formosa, <a>clique aqui</a>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pagina-contato">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2> Contato</h2>
+                <h5>GERÊNCIA DE PESQUISA, PÓS-GRADUAÇÃO E EXTENSÃO </h5>
+                <hr>
+            </div>
+
+            <div class="col-md-4 col-xs-6 text-center my-border">
+                <span class="glyphicon glyphicon-user"></span>
+                <hr>
+
+                <p>Prof. Bruno Quirino Leal - PORTARIA N" 1193, DE 04 DE JULHO DE2017</p>
+            </div>
+            <div class="col-md-4 col-xs-6 text-center my-border">
+                <span class="glyphicon glyphicon-envelope"></span>
+                <hr>
+
+                <p>gepex.formosaifg.edu.br</p>
+            </div>
+
+            <div class="col-md-4 col-xs-12 text-center my-border">
+                <span class="glyphicon glyphicon-phone"></span>
+                <hr>
+
+                <p>(61) 3642 9471 - Gepex</p>
+            </div>
+
         </div>
     </div>
 </section>
@@ -151,6 +258,20 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() > 30) {
+                $("#id-menu").addClass("navbar-fixed-top");
+                $("#pesquisa-e-pos").addClass("my-margin");
+            } else {
+                $("#id-menu").removeClass("navbar-fixed-top");
+                $("#pesquisa-e-pos").removeClass("my-margin");
+            }
+        });
+    });
+</script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="bootstrap/js/bootstrap.min.js"></script>
