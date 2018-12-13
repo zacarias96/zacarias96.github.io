@@ -1,0 +1,179 @@
+
+
+/* ------------- Navbar -------------*/
+
+.img-logo{
+    width: 180px;
+    display: block;
+    background: url('img/white_ifg_logo.png') no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+.divisor{
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 25px;
+}
+
+.my-navbar{
+    background: #195128;
+    margin-bottom: 0px;
+}
+
+.navbar-brand{
+    color: white !important;
+    font-family: Nunito;
+    font-size: 20px;
+}
+
+.navbar-brand:hover{
+    color: #ececec !important;
+}
+
+.my-navbar .navbar-nav>li>a{
+    color: white;
+    font-family: Nunito;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.my-navbar .navbar-nav>li>a:hover{
+    color: #ececec !important;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #ffffff;
+    background: #195128 !important;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background-color: #195128;
+}
+
+.dropdown-menu>li>a:hover{
+    background-color: #1e722f;
+}
+
+.navbar-nav>li>.dropdown-menu a{
+    color: white;
+}
+.navbar-nav>li>.dropdown-menu a:hover{
+    color: #ececec;
+}
+
+@media (max-width: 767px){
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #ececec;
+    }
+    ul>.divisor{
+        display: none;
+    }
+}
+
+.navbar-toggle{
+    margin-top: 15px;
+}
+
+.dropdown-menu>li>a:focus{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #195128;
+}
+
+/* ------------- Index ------------- */
+
+
+#secaocontato{
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+#secaocontato span{
+    font-size: 35px;
+    color: #195128;
+}
+
+.my-border{
+    height: 200px;
+}
+
+
+/* ------------- Footer ------------- */
+
+.img-logo-2{
+    width: 250px;
+}
+
+footer{
+    padding-top: 30px;
+    background-color: #195128;
+}
+
+footer a{
+    color: white;
+    cursor: pointer;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #ececec;
+}
+
+footer a:focus{
+    text-decoration: none;
+    color: #ececec;
+}
+
+.my-direitos{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #154020;
+    width: 100%;
+}
+
+.my-direitos p{
+    color: white;
+}
+
+.my-social-img{
+    width: 60px;
+}
+
+footer h4{
+    color: #bbbbbb;
+}
+
+footer h2{
+    color: white;
+}
+
+
+/* ------------- Tipografia ------------- */
+
+a, p, h1, h2, h3, h4{
+    font-family: Nunito;
+}
+
+p{
+    font-size: 16px;
+}
+
+a{
+    font-size: 16px;
+}
+
+hr{
+    border-width: .18rem;
+    width: 4rem;
+    border-color: rgba(25, 81, 40, 0.4);
+}
