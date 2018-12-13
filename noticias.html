@@ -30,7 +30,7 @@
         </ul>
     </div>
 
-    <nav class="navbar navbar-default my-navbar">
+    <nav class="navbar navbar-default my-navbar" id="id-menu">
         <div class="container">
 
             <!-- header -->
@@ -65,7 +65,6 @@
                             <li><a href="estude-conosco.html">Estude Conosco</a></li>
                             <li><a href="extensao.html">Extensão</a></li>
                             <li><a href="pesquisa-e-pos.html">Pesquisa e Pós-Graduação</a></li>
-                            <li><a href="sistemas-e-servicos.html">Sistemas e Serviços Online</a></li>
                         </ul>
                     </li>
 
@@ -86,11 +85,61 @@
         </div><!-- /container -->
     </nav><!-- /nav -->
 
-    <section id="capa">
+    <section id="noticias">
         <div class="container">
             <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>
+                        Notícias
+                    </h2>
+                    <hr>
+                </div>
 
-                Hello, World!
+                <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1 noticia">
+                    <h4>
+                        Publicado edital do Programa de Bolsas de Iniciação à Docência
+                    </h4>
+                    <h6>Seg, 27/03/2017</h6>
+                    <br>
+                    <p>
+                        O Instituto Federal de Goiás, por meio da pró-reitoria de Ensino (Proen), publica edital do
+                        Programa Institucional de Bolsas de Iniciação à Docência (Pibid/IFG), que visa fomentar a
+                        iniciação à docência de estudantes. As inscrições iniciam-se no dia 29 e seguem até 6 de abril.
+                        O edital e os formulários estão disponíveis na página eletrônica da Proen.
+                    </p>
+                    <a href="">Ver mais...</a>
+                </div>
+
+                <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1 noticia">
+                    <h4>
+                        Conselho Superior deflagra processo de consulta para cargos de reitor e diretor-geral de 10
+                        câmpus
+                    </h4>
+                    <h6>Qua, 22/03/2017</h6>
+                    <br>
+                    <p>
+                        Foi deflagrado pelo Conselho Superior (Consup) do Instituto Federal de Goiás (IFG) o processo
+                        eleitoral - mandato 2017/2021 para os cargos de reitor e diretor-geral dos câmpus Anápolis,
+                        Aparecida de Goiânia, Cidade de Goiás, Formosa, Goiânia, Inhumas, Itumbiara, Jataí, Luziânia e
+                        Uruaçu. A decisão foi tomada na reunião do Consup da última segunda-feira, 20 de março.
+                    </p>
+                    <a href="">Ver mais...</a>
+                </div>
+
+                <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1 noticia">
+                    <h4>
+                        Publicado edital do Programa de Bolsas de Iniciação à Docência
+                    </h4>
+                    <h6>Qua, 22/03/2017</h6>
+                    <br>
+                    <p>
+                        Os estudantes do Instituto Federal de Goiás já podem solicitar a inclusão ou a alteração da
+                        foto no sistema do Q-Acadêmico Web – Módulo do Aluno. A nova medida facilita a inserção das
+                        fotos dos alunos da Instituição no sistema acadêmico e otimiza o uso das imagens nos diversos
+                        sistemas do IFG.
+                    </p>
+                    <a href="">Ver mais...</a>
+                </div>
             </div>
         </div>
     </section>
@@ -111,7 +160,6 @@
                         <li><a href="estude-conosco.html">Estude Conosco</a></li>
                         <li><a href="extensao.html">Extensão</a></li>
                         <li><a href="pesquisa-e-pos.html">Pesquisa e Pós-Graduação</a></li>
-                        <li><a href="sistemas-e-servicos.html">Sistemas e Serviços Online</a></li>
                     </ul>
 
                 </div>
@@ -155,6 +203,20 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 30) {
+                    $("#id-menu").addClass("navbar-fixed-top");
+                    $("#editais").addClass("my-margin");
+                } else {
+                    $("#id-menu").removeClass("navbar-fixed-top");
+                    $("#editais").removeClass("my-margin");
+                }
+            });
+        });
+    </script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>

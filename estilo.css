@@ -93,6 +93,9 @@
 
 /* ------------- Index ------------- */
 
+#capa{
+    margin-top: 70px;
+}
 
 #secaocontato{
     padding-top: 100px;
@@ -115,6 +118,43 @@
 .carousel-inner > .item > img {
     position-relative;
     min-width: 100%;
+}
+
+.ensinos{
+    margin-top: 50px;
+    margin-right: 30px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    cursor: pointer;
+}
+.ensinos a{
+    color: white;
+    text-decoration: none;
+}
+
+.verde{
+    background-color: #32BE4F;
+}
+
+.verde:hover{
+    background-color: #34cd52;
+}
+
+.maisverde{
+    background-color: #4D895A;
+}
+
+.maisverde:hover{
+    background-color: #569a64;
+}
+
+.muitomaisverde{
+    background-color: #1E722F;
+}
+
+.muitomaisverde:hover{
+    background-color: #258939;
 }
 
 
@@ -142,6 +182,25 @@
     cursor: pointer;
 }
 
+#projetos p{
+    text-align: justify;
+}
+
+/* ------------- Notícia ------------- */
+#noticias{
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+}
+
+.noticia{
+    background-color: #f4f4f4f4;
+    box-shadow: 2px 2px 6px #4c4c4c;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
 /* ------------- Nossos Cursos ------------- */
 
 #nossos-cursos h4{
@@ -163,12 +222,27 @@
     padding-bottom: 50px;
 }
 
+/* ---------- Infraestrutura --------- */
+#infraestrutura{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
 
+#IFGfoto{
+    width: 100%;
+}
 /* ------------- Editais ------------- */
 
 #editais{
     padding-bottom: 60px;
     padding-top: 40px;
+}
+
+/* ------------- Estude Conosco ------------- */
+
+#estude-conosco{
+    padding-bottom: 80px;
+    padding-top: 70px;
 }
 
 /* ------------- Footer ------------- */
@@ -241,12 +315,25 @@ hr{
     border-color: rgba(25, 81, 40, 0.4);
 }
 
+@media screen and (max-width: 992px){
+    .ensinos{
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+}
+
 /* xs < 768 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     p{
         font-size: 14px;
     }
+    .ensinos{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
 }
+
+
 
 .my-margin{
     margin-top: 70px;

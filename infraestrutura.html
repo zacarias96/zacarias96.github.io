@@ -30,7 +30,7 @@
         </ul>
     </div>
 
-    <nav class="navbar navbar-default my-navbar">
+    <nav id="id-menu" class="navbar navbar-default my-navbar">
         <div class="container">
 
             <!-- header -->
@@ -65,7 +65,6 @@
                             <li><a href="estude-conosco.html">Estude Conosco</a></li>
                             <li><a href="extensao.html">Extensão</a></li>
                             <li><a href="pesquisa-e-pos.html">Pesquisa e Pós-Graduação</a></li>
-                            <li><a href="sistemas-e-servicos.html">Sistemas e Serviços Online</a></li>
                         </ul>
                     </li>
 
@@ -86,11 +85,53 @@
         </div><!-- /container -->
     </nav><!-- /nav -->
 
-    <section id="capa">
+    <section id="infraestrutura">
         <div class="container">
             <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>
+                        Infraestrutura
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6 col-md-offset-3">
+                    <img id="IFGfoto" src="img/apresentacaocampus.jpg">
+                </div>
 
-                Hello, World!
+                <div class="col-md-8 col-md-offset-2 text-justify">
+                    <hr>
+                    <p>
+                        O Câmpus Formosa do Instituto Federal de Educação, Ciência e Tecnologia de Goiás é resultado do
+                        Programa de Expansão da Rede Federal de Educação Profissional, Científica e Tecnológica
+                        iniciado em 2006.
+                    </p>
+                    <p>
+                        Começou suas atividades em 21 de junho de 2010, recebendo 180 estudantes para cursos do ensino
+                        médio técnico, subsequente, PROEJA e de graduação. A Portaria de Autorização de Funcionamento,
+                        nº 1.170, foi publicada no Diário Oficial da União em 21 de setembro de 2010. Contudo, a
+                        solenidade de inauguração se deu meses depois, em 29 de novembro do mesmo ano, pelo então
+                        Presidente da República, Luís Inácio Lula da Silva.
+                    </p>
+                    <p>
+                        Os cursos instituídos em 2010 foram escolhidos com base no Relatório de Estudo e Pesquisa, do
+                        Observatório Nacional do Mundo do Trabalho e da Educação Profissional e Tecnológica, que
+                        apontou os eixos de Informação e Comunicação, Infraestrutura, Meio Ambiente e licenciaturas em
+                        Biologia e Física como os mais indicados para o câmpus.
+                    </p>
+                    <p>
+                        As aulas para as primeiras turmas tiveram início em agosto de 2010, quando foram abertos os
+                        cursos técnicos integrados ao Ensino Médio em Informática para Internet, Controle Ambiental e
+                        Edificações, e o de Educação para Jovens e Adultos (EJA) em Manutenção e Suporte em
+                        Informática. Ao mesmo tempo, também foram implantados o curso superior de Licenciatura em
+                        Ciências Biológicas e o curso Técnico Subsequente em Edificações.
+                    </p>
+                    <p>
+                        Com os anos, o panorama de cursos sofreu modificações e o quadro de alunos também. Atualmente,
+                        são aproximadamente 1000 alunos, frequentando o ensino médio técnico integrado em tempo
+                        integral regular, cursos na modalidade EJA, cursos de graduação, de extensão e de educação a
+                        distância.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -99,8 +140,8 @@
     <footer class="bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 my-losgo">
-                    <a href="index.html"><img class="img-logo-2" src="img/white_ifg_logo.png"></a>
+                <div class="col-md-3 my-logo">
+                    <a href="index.html"><img class="img-logo-2 img-responsive" src="img/white_ifg_logo.png"></a>
                 </div>
                 <div class="col-md-3 col-xs-6">
                     <ul>
@@ -155,6 +196,20 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(function () {
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 30) {
+                    $("#id-menu").addClass("navbar-fixed-top");
+                    $("#infraestrutura").addClass("my-margin");
+                } else {
+                    $("#id-menu").removeClass("navbar-fixed-top");
+                    $("#infraestrutura").removeClass("my-margin");
+                }
+            });
+        });
+    </script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
